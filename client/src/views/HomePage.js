@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context/Auth/AuthContext';
 
 
-function HomePage(props) {
+function HomePage() {
   const nav = useNavigate()
-  useEffect(()=>nav("/inbox"), [])
+  const {user} = useContext(AuthContext)
+  useEffect(()=>nav(user? "/inbox" : '/login'), [])
   return (
     <div>
       
