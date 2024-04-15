@@ -61,9 +61,6 @@ function Login(props) {
                       Login
                     </button>
                   </div>
-                  <a className="small text-muted" href="#!">
-                    Forgot password?
-                  </a>
                   <p className="mb-5 pb-lg-2" style={{ color: "#393f81" }}>
                     Don't have an account?&nbsp;
                     <Link to="/register" style={{ color: "#393f81" }}>

@@ -35,7 +35,7 @@ function MessageDetails(props) {
             console.log(err);
           }
         }
-        if(!user) nav("/")
+        if(!user || user_id == id) nav("/")
         getMessages();
       }, [id]);
 

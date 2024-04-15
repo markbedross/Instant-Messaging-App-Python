@@ -75,9 +75,6 @@ function Register() {
                       Register
                     </button>
                   </div>
-                  <a className="small text-muted" href="#!">
-                    Forgot password?
-                  </a>
                   <p className="mb-5 pb-lg-2" style={{ color: "#393f81" }}>
                     Already have an account?{" "}
                     <Link to="/login" style={{ color: "#393f81" }}>
